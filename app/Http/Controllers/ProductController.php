@@ -101,7 +101,7 @@ class ProductController extends Controller
         //
         $request->validate([
             'name' => 'required',
-            'description' => 'required',
+            // 'description' => 'required',
             'price' => 'required|numeric',
         ]);
 
@@ -109,7 +109,7 @@ class ProductController extends Controller
 
         $product->update([
             'name' => $request->name,
-            'description' => $request->description,
+            // 'description' => $request->description,
             'price' => $request->price,
         ]);
 

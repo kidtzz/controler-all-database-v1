@@ -9,6 +9,7 @@
 <body class="container p-4">
   <div class="container-fluid">
     <div class="container-sm">
+      <h5 class="mb-4">APP TESTING DB</h5>
       @yield('content')
     </div>
   </div>

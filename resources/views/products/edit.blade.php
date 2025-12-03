@@ -1,8 +1,11 @@
 @extends('layouts.app')
 @section('content')
-<div class="container mt-4">
 
-  <h2>Edit Product</h2>
+
+<div class="border border-2 rounded p-3 container mt-4">
+  <div class="d-flex justify-content-end">
+    <h5>Edit Product</h5>
+  </div>
 
   @if ($errors->any())
   <div class="alert alert-danger">
@@ -25,12 +28,6 @@
         class="form-control"
         value="{{ $product->name }}">
     </div>
-
-    <div class="mb-3">
-      <label>Description</label>
-      <textarea name="description" class="form-control">{{ $product->description }}</textarea>
-    </div>
-
     <div class="mb-3">
       <label>Price</label>
       <input type="number"

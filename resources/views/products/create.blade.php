@@ -1,8 +1,12 @@
 @extends('layouts.app')
 @section('content')
-<div class="container">
-  <h2>Add Product</h2>
-  <a href="{{ route('products.index') }}" class="btn btn-secondary btn-sm mb-3">Back</a>
+<div class="border border-2 rounded p-3">
+  <div class="d-flex justify-content-between">
+    <a href="{{ route('products.index') }}" class="btn btn-secondary btn-sm mb-3">Back</a>
+    <h5>Add Product</h5>
+  </div>
+
+
 
   @if ($errors->any())
   <div class="alert alert-danger">
