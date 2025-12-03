@@ -4,6 +4,9 @@
   <div class=" mx-0">
     <a href="{{ route('products.create') }}" class="btn btn-primary mb-3 btn-sm">Add Product</a>
   </div>
+  <div>
+    <a href="{{ route('tracks.index') }}" class="btn btn-secondary btn-sm mb-3">Trys new another app?</a>
+  </div>
   <div class=" mx-0">
     <form action="{{ route('products.index') }}" method="GET" class="mb-3">
       <div class="input-group">

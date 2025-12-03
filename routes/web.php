@@ -2,6 +2,9 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\TrackController;
+
+
 
 /*
 |--------------------------------------------------------------------------
@@ -19,6 +22,8 @@ Route::get('/', function () {
 })->name('home');
 
 Route::get('/index', [ProductController::class, 'index']);
+Route::get('/index-track', [TrackController::class, 'index']);
 
 // CRUD otomatis untuk Product
 Route::resource('products', ProductController::class);
+Route::resource('tracks', TrackController::class);
