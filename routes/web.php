@@ -16,14 +16,16 @@ use App\Http\Controllers\TrackController;
 |--------------------------------------------------------------------------
 */
 
-// Halaman utama diarahkan ke products.index
+// Halaman utama diarahkan ke index
 Route::get('/', function () {
   return view('homepage');
 })->name('home');
 
+
+
 Route::get('/index', [ProductController::class, 'index']);
 Route::get('/index-track', [TrackController::class, 'index']);
 
-// CRUD otomatis untuk Product
+// CRUD otomatis
 Route::resource('products', ProductController::class);
 Route::resource('tracks', TrackController::class);
