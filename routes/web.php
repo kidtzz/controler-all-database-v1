@@ -17,13 +17,12 @@ use App\Http\Controllers\TrackController;
 */
 
 // Halaman utama diarahkan ke index
-Route::get('/', function () {
-  return view('homepage');
-})->name('home');
+// Route::get('/', function () {
+//   return view('homepage');
+// })->name('home');
 
 
-
-Route::get('/index', [ProductController::class, 'index']);
+Route::get('/', [ProductController::class, 'index']);
 Route::get('/index-track', [TrackController::class, 'index']);
 
 // CRUD otomatis
